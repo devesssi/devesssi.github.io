@@ -1,152 +1,171 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Devesh Tiwari",
+    "label": "Undergraduate Researcher | AI Systems",
+    "email": "tiwaridevesh745@gmail.com",
+    "phone": "+91-8169587125",
+    "website": "https://github.com/devesssi",
+    "summary": "Undergraduate researcher focused on transformer architectures, reinforcement learning, and scalable AI systems. Exploring the intersection of research and engineering through first-principles implementation.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Mumbai",
+      "countryCode": "IN"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "network": "LinkedIn",
+        "username": "deveshtiwari12",
+        "url": "https://www.linkedin.com/in/deveshtiwari12/"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "devesssi",
+        "url": "https://github.com/devesssi"
+      },
+      {
+        "network": "X",
+        "username": "ImDT29",
+        "url": "https://x.com/ImDT29"
+      },
+      {
+        "network": "Instagram",
+        "username": "tiwaridevesh.dev",
+        "url": "https://instagram.com/tiwaridevesh.dev"
       }
     ]
   },
-  "work": [],
+
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "Shree L.R. Tiwari College of Engineering, Mumbai University",
+      "area": "B.E. in Computer Engineering",
+      "startDate": "2022",
+      "endDate": "2026 (Expected)",
+      "location": "Mumbai, India"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "publications": [
+
+  "work": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "VisionX Technologies",
+      "position": "Software & AI Engineer",
+      "startDate": "2025-07",
+      "endDate": "2025-08",
+      "summary": "Deployed AI workflows and backend APIs for production systems. Integrated LLM-powered features into real-time applications."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "InstaPreps",
+      "position": "AI Engineer",
+      "startDate": "2025-06",
+      "endDate": "2025-07",
+      "summary": "Deployed PyTorch models on AWS EC2 with optimized inference pipelines. Improved latency-sensitive ML systems for production educational platforms."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Robo AI",
+      "position": "AI/ML Intern",
+      "startDate": "2024-06",
+      "endDate": "2025-05",
+      "summary": "Prototyped LLM-based automation tools and agent workflows."
     }
   ],
+
+  "projects": [
+    {
+      "name": "Transformer (From Scratch)",
+      "description": "Re-implementing 'Attention Is All You Need' in PyTorch, focusing on embeddings, masking, multi-head attention, and training dynamics."
+    },
+    {
+      "name": "Reinforcement Learning – Lunar Lander",
+      "description": "Trained RL agent using OpenAI Gym and PyTorch. Explored reward shaping, exploration strategies, and policy optimization."
+    },
+    {
+      "name": "Detection Model (YOLOv8 + LLaMA)",
+      "description": "Built multimodal awareness system combining computer vision with language reasoning."
+    },
+    {
+      "name": "Research AI Agent",
+      "description": "Developed research planner using Mistral 7B with structured outputs for automated workflows."
+    }
+  ],
+
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "Introduction to Transformers & LLMs",
+      "event": "AIML Club Technical Session",
+      "location": "SLRTCE, Mumbai",
+      "date": "2024",
+      "description": "Delivered lecture covering attention mechanisms, transformer architecture, and modern LLM fundamentals."
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Reinforcement Learning Fundamentals",
+      "event": "AIML Club Workshop",
+      "location": "SLRTCE, Mumbai",
+      "date": "2024",
+      "description": "Conducted technical session on RL basics, reward design, and implementation using OpenAI Gym."
     }
   ],
-  "teaching": [
+
+  "leadership": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "organization": "AIML Club, SLRTCE",
+      "position": "Chairperson",
+      "startDate": "2024",
+      "summary": "Led AI workshops, technical mentorship programs, and research-oriented student initiatives."
     }
   ],
-  "portfolio": [
+
+  "skills": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "Programming",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "name": "AI/ML",
+      "keywords": [
+        "Transformers",
+        "Reinforcement Learning",
+        "PyTorch",
+        "YOLOv8",
+        "LLaMA",
+        "Mistral 7B",
+        "OpenCV"
+      ]
+    },
+    {
+      "name": "Systems & Deployment",
+      "keywords": [
+        "AWS EC2",
+        "Docker (basic)",
+        "REST APIs",
+        "MongoDB",
+        "PostgreSQL",
+        "Node.js",
+        "Django",
+        "Streamlit"
+      ]
+    }
+  ],
+
+  "interests": [
+    {
+      "name": "Research Interests",
+      "keywords": [
+        "Transformer Architectures",
+        "Efficient Training",
+        "Reinforcement Learning",
+        "Model Alignment",
+        "AI Systems Engineering"
+      ]
+    }
+  ],
+
+  "references": [
+    {
+      "name": "Available upon request"
     }
   ]
 }

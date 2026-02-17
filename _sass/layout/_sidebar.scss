@@ -154,8 +154,10 @@
   }
 
   img {
-    max-width: 175px;
-    border-radius: 50%;
+  max-width: 180px;
+  // height: auto;
+  border-radius: 8px;  // or 0px for sharp square
+
 
     @include breakpoint($large) {
       padding: 5px;

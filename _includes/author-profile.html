@@ -87,6 +87,14 @@
       {% endif %}      
       {% if author.github %}
         <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      {% if author.huggingface %}
+  <li>
+    <a href="https://huggingface.co/{{ author.huggingface }}" target="_blank">
+      🤗 HuggingFace
+    </a>
+  </li>
+{% endif %}
+
       {% endif %}
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
@@ -132,9 +140,9 @@
       {% if author.mastodon %}
         <li><a href="{{ author.mastodon }}"><i class="fab fa-fw fa-mastodon icon-pad-right" aria-hidden="true"></i>Mastodon</a></li>
       {% endif %}
-      {% if author.medium %}
+      <!-- {% if author.medium %}
         <li><a href="{{ author.medium }}"><i class="fab fa-fw fa-medium icon-pad-right" aria-hidden="true"></i>Medium</a></li>
-      {% endif %}      
+      {% endif %}       -->
       {% if author.pinterest %}
         <li><a href="https://www.pinterest.com/{{ author.pinterest }}"><i class="fab fa-fw fa-pinterest icon-pad-right" aria-hidden="true"></i>Pinterest</a></li>
       {% endif %}            
