@@ -24,6 +24,10 @@ main:
     
   - title: "CV"
     url: /cv/
+
+  - title: "Gallery"
+    url: /gallery/
+
     
   # - title: "CV"
   #   url: /cv-json/

@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "Devesh Tiwari"
 author_profile: true
 ---
 

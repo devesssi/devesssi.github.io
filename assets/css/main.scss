@@ -2,42 +2,177 @@
 ---
 
 /*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * Main SCSS import file
  */
 
 @import
-    "vendor/breakpoint/breakpoint",
+  "vendor/breakpoint/breakpoint",
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+  "themes",
+  "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+  "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-    "include/mixins",
-    "vendor/susy/susy",
+  "include/mixins",
+  "vendor/susy/susy",
 
-    "layout/reset",
-    "layout/base",
+  "layout/reset",
+  "layout/base",
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+  "include/utilities",
+  "layout/tables",
+  "layout/buttons",
+  "layout/notices",
+  "layout/masthead",
+  "layout/navigation",
+  "layout/footer",
+  "syntax",
 
-    "layout/forms",
+  "layout/forms",
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
+  "layout/page",
+  "layout/archive",
+  "layout/sidebar",
+  "layout/json_cv",
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+  "vendor/font-awesome/fontawesome",
+  "vendor/font-awesome/solid",
+  "vendor/font-awesome/brands"
 ;
+
+
+/* ==========================================================
+   SIDEBAR ALIGNMENT FIX
+   ========================================================== */
+
+#main {
+  align-items: flex-start;
+}
+
+.sidebar {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  position: relative;
+  z-index: 50;
+}
+
+.author__avatar,
+.author__content {
+  margin-top: 0 !important;
+}
+
+
+/* ==========================================================
+   SIDEBAR DROPDOWN FIX
+   ========================================================== */
+
+.author__urls-wrapper {
+  position: relative;
+  z-index: 1000;
+}
+
+.author__urls {
+  z-index: 2000 !important;
+}
+
+
+/* ==========================================================
+   GALLERY GRID
+   ========================================================== */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+
+/* ==========================================================
+   GALLERY MODAL (RENAMED TO AVOID THEME COLLISION)
+   ========================================================== */
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99999;
+  padding: 2rem;
+}
+
+.gallery-modal.active {
+  display: flex;
+}
+
+.gallery-modal-content {
+  max-width: 90%;
+  max-height: 75vh;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.gallery-close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.gallery-close:hover {
+  transform: scale(1.2);
+}
+

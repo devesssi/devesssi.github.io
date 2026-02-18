@@ -18,6 +18,12 @@ layout: compress
 
     {{ content }}
 
+    <!-- ================= GALLERY MODAL ================= -->
+    <div class="gallery-modal" id="imageModal">
+      <span class="gallery-close" onclick="closeModal()">&times;</span>
+      <img class="gallery-modal-content" id="modalImage">
+    </div>
+
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
@@ -26,6 +32,29 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+
+    <!-- ================= GALLERY SCRIPT ================= -->
+    <script>
+      function openModal(src) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+
+        modal.classList.add("active");
+        modalImg.src = src;
+      }
+
+      function closeModal() {
+        document.getElementById("imageModal").classList.remove("active");
+      }
+
+      // Optional: close when clicking outside image
+      document.addEventListener("click", function(event) {
+        const modal = document.getElementById("imageModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+    </script>
 
   </body>
 </html>
